@@ -1,0 +1,33 @@
+#env
+
+database postgresql 9.4.1
+python 2.7.10
+django 1.8.3
+
+#packages
+easy-thumbnails
+
+#db
+psql -d ore -U winston
+
+# grant directory to user:
+sudo chown -R username /Users/Parthenon/Library/Logs/pi 
+
+#check django version
+django-admin --version
+
+#virtualevn
+winstonvirtual/bin/python
+to activate 
+source winstonvirtual/bin activate
+to exit 
+deactivate
+
+
+# You have installed Django's auth system, and don't have any superusers defined.
+#django auth super user
+winston
+email: 
+winstonchilw@gmail.com
+password:
+chi5756079 
