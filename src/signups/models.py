@@ -14,3 +14,4 @@ class SignUp(models.Model):
 	def __unicode__(self):
 		#note for user after signups
 		return smart_unicode(self.email)
+

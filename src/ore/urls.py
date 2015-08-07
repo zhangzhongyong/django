@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^thank-you/$', 'signups.views.thankyou', name='thankyou'),
     url(r'^$', 'signups.views.home', name='home'),
     url(r'^about-us/$', 'signups.views.aboutus', name='aboutus'),
+    url(r'^show-data/$', 'funddata.views.showdata', name='showdata'),
 ]
 
 if settings.DEBUG:
