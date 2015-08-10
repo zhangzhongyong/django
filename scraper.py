@@ -56,12 +56,13 @@ html = str(html)
 parsed_html = BeautifulSoup(html)
 oddsections = parsed_html.find_all('tr', attrs={'odd'})
 evensections = parsed_html.find_all('tr', attrs={'even'})
-file = open('parsed_data.txt', "wb")
+#file = open('parsed_data.txt', "wb")
+result =[] 
 for oddsection in oddsections:
 	print oddsection.get_text(',')
-	file.write(oddsection.get_text(',').strip()+"\n")
+	#file.write(oddsection.get_text(',').strip()+"\n")
 for evensection in evensections:
 	print evensection.get_text(',')
-	file.write(evensection.get_text(',').strip()+"\n")
-file.flush()
-file.close()
+#	file.write(evensection.get_text(',').strip()+"\n")
+#file.flush()
+#file.close()

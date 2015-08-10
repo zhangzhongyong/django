@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method='POST' action=''> {% csrf_token %}
+	{{form.as_table}}
+</form>
+{% for field in form %}
+	<div>
+		{{field.value}}
+	</div>
+{% endfor %}
+<!-- <form>
+
+    <p>Here you enter your personal data...</p>
+    
+    <p>Here you enter your education data...</p>
+    {{testform.university }}
+
+</form>
+ -->
+
+<table>
+	{% for item in query_results %}
+	<td>{{item.fund_id}}<br></td>
+	{% endfor %}
+</table>
+{% endblock%}
